@@ -1,7 +1,11 @@
 # okonayakodji's nvim setup
 
 ## Dependencies
-- `xclip`
+- xclip (`sudo pacman -S xclip`)
+- haskell-language-server (`ghcup install hls` or `sudo pacman -S haskell-language-server`)
+- pyright (`sudo pacman -S pyright`)
+- gopls (`sudo pacman -S gopls`)
+- rust_analyzer (`rustup component add rust-analyzer`)
 
 ## How to install?
 1. Install nvim.
