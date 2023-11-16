@@ -11,3 +11,4 @@ vim.opt.termguicolors = true
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
 vim.cmd [[highlight! link SignColumn LineNr]]
+vim.cmd [[autocmd BufWritePost,FileWritePost * silent! :%s/\s\+$]]
