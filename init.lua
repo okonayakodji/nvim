@@ -26,8 +26,16 @@ lsp.rust_analyzer.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
+
 lsp.gopls.setup {
     on_attach = on_attach,
     capabilities = capabilities
 }
 
+lsp.hls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities
+}
+
+
+require("luasnip.loaders.from_snipmate").load({ path = {"./snippets"}})
