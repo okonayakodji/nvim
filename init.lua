@@ -23,7 +23,7 @@ local lsp_servers = {
     lsp.rust_analyzer,
     lsp.hls,
     lsp.lua_ls,
-    lsp.marksman
+    lsp.marksman,
 }
 
 for _, server in ipairs(lsp_servers) do
@@ -36,8 +36,10 @@ end
 
 require("luasnip.loaders.from_snipmate").load({ path = {"./snippets"}})
 require("luasnip.loaders.from_vscode").lazy_load()
+
 require("telescope").setup {
         defaults = {
+            layout_strategy = "vertical",
             previewer = true,
             file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
             grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,

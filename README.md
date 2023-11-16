@@ -1,13 +1,11 @@
 # okonayakodji's nvim setup
 
 ## Table of Contents
-
 <!--toc:start-->
 - [okonayakodji's nvim setup](#okonayakodjis-nvim-setup)
   - [Table of Contents](#table-of-contents)
   - [Dependencies](#dependencies)
   - [How to install](#how-to-install)
-<!--toc:end-->
 
 ## Dependencies
 - gopls (`sudo pacman -S gopls`)
@@ -15,7 +13,8 @@
 - lua-language-server (`sudo pacman -S lua-language-server`)
 - marksman (`sudo pacman -S marksman`)
 - pyright (`sudo pacman -S pyright`)
-- rust_analyzer (`rustup component add rust-analyzer` or `sudo pacman -S rust-analyzer`)
+- ripgrep (`sudo pacman -S ripgrep`)
+- rust_analyzer (`rustup component add rust-analyzer`)
 - xclip (`sudo pacman -S xclip`)
 
 ## How to install
