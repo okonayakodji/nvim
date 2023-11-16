@@ -35,6 +35,7 @@ end
 
 
 require("luasnip.loaders.from_snipmate").load({ path = {"./snippets"}})
+require("luasnip.loaders.from_vscode").lazy_load()
 require("telescope").setup {
         defaults = {
             previewer = true,
