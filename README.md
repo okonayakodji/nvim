@@ -1,11 +1,15 @@
 # okonayakodji's nvim setup
 
+## Dependencies
+- `xclip`
+
 ## How to install?
 1. Install nvim.
-2. Run:
+2. Install dependencies
+3. Run:
 ```bash
 git clone https://github.com/okonayakodji/nvim ~/.config/nvim
 ```
-3. Install [packer](https://github.com/wbthomason/packer.nvim).
-4. Run nvim.
-5. Write `:PackerInstall`
+4. Install [packer](https://github.com/wbthomason/packer.nvim).
+5. Run nvim.
+6. Write `:PackerInstall`
