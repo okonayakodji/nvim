@@ -1,7 +1,7 @@
 require("plugins")
 require("settings")
-require("keymaps")
 require("completions")
+require("keymaps")
 
 -- vim.cmd [[highlight ExtraWhitespace ctermbg=red guibg=red]]
 
