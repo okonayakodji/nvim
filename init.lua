@@ -17,25 +17,28 @@ end
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-lsp.pyright.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
+local lsp_servers = {
+    lsp.pyright,
+    lsp.gopls,
+    lsp.rust_analyzer,
+    lsp.hls,
+    lsp.lua_ls,
 }
 
-lsp.rust_analyzer.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lsp.gopls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lsp.hls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
+for _, server in ipairs(lsp_servers) do
+    server.setup {
+        on_attach = on_attach,
+        capabilities = capabilities
+    }
+end
 
 
 require("luasnip.loaders.from_snipmate").load({ path = {"./snippets"}})
+require("telescope").setup {
+        defaults = {
+            previewer = true,
+            file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
+            grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
+            qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
+        },
+}
