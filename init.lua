@@ -23,6 +23,7 @@ local lsp_servers = {
     lsp.rust_analyzer,
     lsp.hls,
     lsp.lua_ls,
+    lsp.marksman
 }
 
 for _, server in ipairs(lsp_servers) do
