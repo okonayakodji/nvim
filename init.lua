@@ -24,6 +24,7 @@ local lsp_servers = {
     lsp.hls,
     lsp.lua_ls,
     lsp.marksman,
+    lsp.ccls,
 }
 
 for _, server in ipairs(lsp_servers) do

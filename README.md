@@ -8,6 +8,7 @@
   - [How to install](#how-to-install)
 
 ## Dependencies
+- ccls (`sudo pacman -s ccls`)
 - gopls (`sudo pacman -S gopls`)
 - haskell-language-server (`ghcup install hls` or `sudo pacman -S haskell-language-server`)
 - lua-language-server (`sudo pacman -S lua-language-server`)
@@ -15,7 +16,7 @@
 - pyright (`sudo pacman -S pyright`)
 - ripgrep (`sudo pacman -S ripgrep`)
 - rust_analyzer (`rustup component add rust-analyzer`)
-- xclip (`sudo pacman -S xclip`)
+- xclip (`sudo pacman -s xclip`)
 
 ## How to install
 1. Install nvim
