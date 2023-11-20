@@ -26,6 +26,7 @@ return require("packer").startup(function(use)
   use "saadparwaiz1/cmp_luasnip", -- for autocompletion
   use "rafamadriz/friendly-snippets", -- useful snippets
   use "nvim-lua/plenary.nvim",
-  use "fatih/vim-go"
+  use "fatih/vim-go",
+  use {'edluffy/hologram.nvim'}
 }
 end)

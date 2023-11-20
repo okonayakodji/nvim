@@ -47,3 +47,7 @@ require("telescope").setup {
             qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
         },
 }
+
+require("hologram").setup {
+    auto_display = true
+}
