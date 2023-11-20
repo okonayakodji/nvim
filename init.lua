@@ -49,5 +49,9 @@ require("telescope").setup {
 }
 
 require("hologram").setup {
-    auto_display = true
+    auto_display = true,
+}
+
+require("telekasten").setup {
+    home = vim.fn.expand("~/Documents/Zettelkasten/Основное/Заметки/"),
 }

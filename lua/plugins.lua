@@ -27,6 +27,10 @@ return require("packer").startup(function(use)
   use "rafamadriz/friendly-snippets", -- useful snippets
   use "nvim-lua/plenary.nvim",
   use "fatih/vim-go",
-  use {'edluffy/hologram.nvim'}
+  use {'edluffy/hologram.nvim'},
+  use {
+    'renerocksai/telekasten.nvim',
+    requires = {'nvim-telescope/telescope.nvim'}
+  }
 }
 end)
