@@ -33,5 +33,6 @@ return require("packer").startup(function(use)
   },
   use "sindrets/diffview.nvim",
   use "airblade/vim-gitgutter",
+  use { "ellisonleao/gruvbox.nvim" },
 }
 end)
