@@ -15,6 +15,7 @@ vim.opt.columns = 80
 vim.opt.wrapmargin = 2
 vim.cmd [[highlight! link SignColumn LineNr]]
 vim.cmd [[autocmd BufWritePost,FileWritePost * silent! :%s/\s\+$]]
+vim.cmd [[autocmd BufWritePost,FileWritePost *.py silent! :!yapf -i %:p]]
 vim.diagnostic.config({
   virtual_text = true
 })
