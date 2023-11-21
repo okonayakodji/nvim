@@ -28,8 +28,10 @@ return require("packer").startup(function(use)
   use "nvim-lua/plenary.nvim",
   use "fatih/vim-go",
   use {
-    'renerocksai/telekasten.nvim',
-    requires = {'nvim-telescope/telescope.nvim'}
-  }
+    "renerocksai/telekasten.nvim",
+    requires = {"nvim-telescope/telescope.nvim"}
+  },
+  use "sindrets/diffview.nvim",
+  use "airblade/vim-gitgutter",
 }
 end)
