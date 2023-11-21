@@ -17,6 +17,7 @@
 - ripgrep (`sudo pacman -S ripgrep`)
 - rust_analyzer (`rustup component add rust-analyzer`)
 - xclip (`sudo pacman -s xclip`)
+- yapf (`sudo pacman -S yapf`)
 
 ## How to install
 1. Install nvim
